@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Cartão com Efeito em Glassmorphism</title>
+
+
+</head>
+<body>
+<script>
+    window.onload = initPage;
+
+    function initPage(){
+        var nome = document.getElementById("nome-home")
+        nome.textContent = sessionStorage.getItem("nomeCompleto")
+
+        var saldo = document.getElementById("valor")
+        saldo.textContent = sessionStorage.getItem("saldo")
+    }
+
+</script>
+
+<header class="nav-bar">
+    <h1 class="logo">My card</h1>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <script src="script-home.js"></script>
+    <label class="perfil" for="input-foto" tabindex="0">
+        <img class="image-perfil"  src="images/perfil.svg">
+    </label>
+    <input type="file" onchange="imageUploaded()" id="input-foto" accept="image/*" >
+</header>
+
+<main>
+    <section class="credit-card">
+        <div class="info-card">
+            <img src="images/modelcard.svg" alt="user card">
+            <div class="info-text">
+                <h1>Bem vindo ;)</h1>
+                <h1 id="nome-home"></h1>
+                <p>Que bom que voltou!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="front-face-card">
+                <img src="images/ElemetsCard/chip.svg" alt="Chip" class="chip" id="chip">
+                <img src="images/ElemetsCard/signal.svg" alt="Signal" class="signal" id="signal">
+                <img src="images/ElemetsCard/flag_card.png" alt="Flag" id="flag">
+                <h1 id="logo">Saldo</h1>
+                <h1 id="cifrão">R$</h1>
+                <h1 id="valor"></h1>
+            </div>
+        </div>
+    </section>
+
+
+</main>
+</body>
+</html>

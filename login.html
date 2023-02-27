@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Cartão com Efeito em Glassmorphism</title>
+</head>
+<body>
+<header class="nav-bar">
+  <h1 class="logo">My card</h1>
+  <nav>
+    <ul class="nav__links">
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Serviços</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  <a href="#"><button class="btn">Login</button></a>
+</header>
+
+<main>
+  <section class="credit-card">
+
+    <!------------FORMULÁRIO DE LOGIN------------->
+
+    <script src="script-login.js"></script>
+    <form onsubmit="fazLogin()" method="POST" class="form-register">
+      <div id="b-form1"></div>
+      <div id="b-form2"></div>
+      <div id="b-form3"></div>
+      <fieldset class="form-area-login">
+        <legend id="legend-form-login"><h3>Venha fazer parte dessa inovação</h3></legend>
+        <label for="email-form-login">Email</label>
+        <input class="input-form" id="email-form-login" name="email" type="email" autocomplete="email" required placeholder="Digite seu e-mail">
+        <label for="senha-form-login">Senha</label>
+        <input class="input-form" id="senha-form-login" name="nome" type="password" autocomplete="name" required placeholder="Digite sua senha">
+        <br>
+        <a href="#"><button class="btn" id="btn-form">Entrar</button></a>
+        <p>Já preencheu? <a href="#">Baixe nosso App</a> </p>
+      </fieldset>
+    </form>
+
+  <!---------------CARDS DE VANTAGENS------------------>
+  <section class="container-advantageCard">
+        <span class="subTitle">
+          <h2>Um banco completo com vantagens exclusivas</h2><i class="ri-checkbox-circle-line"></i>
+        </span>
+    <div class="advantageCard">
+      <div class="face face1">
+        <div class="content">
+          <img src="images/app.svg" alt="App">
+          <h3>Atendimento</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>Sua conta 100% digital com atendimento 24h por dia.<br> Faça seus pagamentos, transações e investimentos a qualquer momento !</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="advantageCard">
+      <div class="face face1">
+        <div class="content">
+          <img src="images/investimeto.svg" alt="Investimento">
+          <h3>Investimento</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>Integramos uma área onde você pode investir seu dinheiro com segurança e praticidade, podendo aplicá-lo de diversas formas.</p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="advantageCard">
+      <div class="face face1">
+        <div class="content">
+          <img src="images/rentabilidade.svg" alt="Rentabilidade">
+          <h3>Rentabilidade</h3>
+        </div>
+      </div>
+      <div class="face face2">
+        <div class="content">
+          <p>Nossas poupanças rendem muito além do que você pode imaginar, com taxas que irão valorizar muito mais o seu dinheiro ! </p>
+          <a href="#">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--------------INFO SEGURANÇA------------------->
+  <section class="container-security">
+        <span class="subTitle">
+          <h2>garantimos máxima confidencialidade</h2><i class="ri-checkbox-circle-line"></i>
+        </span>
+    <div class="info-security">
+      <div class="security-img"><img src="images/segurança.svg" alt="segurança"></div>
+      <div class="sec-list">
+        <ul>
+          <li>Todas as transações são criptografadas</li>
+          <li>Autenticação por biometria, Tokens e também por reconhecimento facial</li>
+          <li>Bloqueio do cartão pelo app em caso de perda ou roubo</li>
+          <li>Envio imediato de notificação para cada transação realizada</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+</main>
+</body>
+</html>
